@@ -1,1 +1,0 @@
-A simple multiple choice color code guessing game made for Web Develpoment 12.
