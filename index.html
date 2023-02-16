@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hexadecimal Color Code Game</title>
+
+    <link rel="stylesheet" href="style.css" />
+	<link rel="manifest" href="manifest.json">
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="modeSelect">
+      <br /><br /><br /><br /><br /><br /><br />
+      <h1>Which mode would you like to play in?</h1>
+      <button id="colorCode" onclick="codeMode()">Color Code Guesser</button
+      ><br /><br />
+      <button id="color" onclick="colorMode()">Colour Guesser</button
+      ><br /><br />
+    </div>
+
+    <div id="difSelect">
+      <br /><br /><br /><br /><br /><br /><br />
+      <h1>Which difficulty would you like to play in?</h1>
+      <button id="easy" onclick="easyMode()">Easy</button><br /><br />
+      <button id="medium" onclick="mediumMode()">Medium</button><br /><br />
+      <button id="hard" onclick="hardMode()">Hard</button>
+    </div>
+
+    <div id="endScreen">
+      <br /><br /><br /><br /><br /><br /><br />
+      <h1 id="scoreDis"></h1>
+      <button id="replay" onclick="reload()">Replay</button>
+    </div>
+
+    <h1>What is the color code of this colour?</h1>
+
+    <div id="colorSample"></div>
+
+    <div id="answers"></div>
+
+    <div class="score">Score: <span id="score"></span></div>
+  </body>
+</html>
